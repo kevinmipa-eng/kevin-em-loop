@@ -41,8 +41,13 @@ header {
 
 @media screen and (max-width: 600px) {
   .banner {
-    aspect-ratio: 16 / 9;
-    max-height: 50vh;
+    aspect-ratio: auto;
+    width: 100%;
+    height: auto;
+    max-height: 45vh; /* limita altura para não ocupar a tela inteira */
+    object-fit: contain;
+    object-position: top center; /* mantém a parte superior visível */
+    background-color: #000; /* evita bandas brancas em imagens com espaço */
   }
 }
 
