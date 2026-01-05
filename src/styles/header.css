@@ -29,9 +29,6 @@ header {
   margin-right: 10px;         
 }
 
-
-
-
 #nav_logo {
     width: 68px;
     height: auto;
@@ -55,4 +52,28 @@ header {
     color: #1d1d1d;
     border-bottom: 3px solid #117758;
 
+}
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    
+    #nav_list, #navbar.btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    
 }
