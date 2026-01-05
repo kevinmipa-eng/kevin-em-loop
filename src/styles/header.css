@@ -12,21 +12,38 @@ header {
 }
 
 .banner-scroll {
-  display: flex;              
-  overflow-x: auto;           
-  scroll-snap-type: x mandatory; 
-  -webkit-overflow-scrolling: touch; 
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 0;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.banner-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .banner {
-  flex: 0 0 auto;             
-  width: 100%;                
-  max-width: 1600px;          
-  height: 404px;              
-  object-fit: cover;          
-  object-position: center;    
-  scroll-snap-align: start;   
-  margin-right: 10px;         
+  display: block;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  aspect-ratio: 1600 / 404;
+  object-fit: cover;
+  object-position: center;
+  scroll-snap-align: start;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    aspect-ratio: 16 / 9;
+    max-height: 50vh;
+  }
 }
 
 #nav_logo {
