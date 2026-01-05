@@ -25,24 +25,6 @@ header {
   display: none;
 }
 
-/* Automatic slider (CSS only) */
-.banner-scroll.auto-slide {
-  overflow: hidden;
-  position: relative;
-}
-
-.banner-track {
-  display: flex;
-  width: 100%;
-  /* 2 slides -> 2 * 5s = 10s total loop */
-  animation: slide 10s linear infinite;
-  will-change: transform;
-}
-
-.banner-track:hover {
-  animation-play-state: paused; /* pausa ao passar o mouse */
-}
-
 .banner {
   display: block;
   flex: 0 0 100%;
@@ -55,17 +37,6 @@ header {
   object-position: center;
   scroll-snap-align: start;
   margin: 0;
-}
-
-/* Keyframes para duas imagens */
-@keyframes slide {
-  0%, 45% { transform: translateX(0%); }
-  55%, 100% { transform: translateX(-100%); }
-}
-
-/* Acessibilidade: respeitar preferência de reduzir movimento */
-@media (prefers-reduced-motion: reduce) {
-  .banner-track { animation: none; }
 }
 
 @media screen and (max-width: 600px) {
