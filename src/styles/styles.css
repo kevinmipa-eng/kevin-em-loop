@@ -54,9 +54,6 @@ body {
 .video-text {
   width: 60%;
   line-height: 1.45;
-  p {
-  text-indent: 30px; /* define o recuo da primeira linha */
-}
 
 }
 
