@@ -34,54 +34,6 @@ section {
     background-color: #8f7b1a;
 }
 
-
-.videos-section {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 20px;
-}
-
-.video-block {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.video-block iframe {
-  width: 50%;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
-  border: none;
-}
-
-.video-text {
-  width: 60%;
-  line-height: 1.45;
-
-}
-
-/* Alterna alinhamento */
-.video-block.left {
-  flex-direction: row; /* vídeo à esquerda, texto à direita */
-}
-
-.video-block.right {
-  flex-direction: row-reverse; /* vídeo à direita, texto à esquerda */
-}
-
-/* Responsivo para celular */
-@media (max-width: 768px) {
-  .video-block {
-    flex-direction: column !important;
-  }
-
-  .video-block iframe,
-  .video-text {
-    width: 100%;
-  }
-}
-
 .socia-midia-buttons {
     display: flex;
     gap: 18px;
