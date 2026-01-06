@@ -12,6 +12,10 @@ body {
     background-color: #64cec9;
 }
 
+section {
+    padding: 28px 8%;
+}
+
 .btn-default {
     border: none;
     display: flex;
@@ -77,3 +81,28 @@ body {
     width: 100%;
   }
 }
+
+.socia-midia-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.socia-midia-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: 1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.socia-midia-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1)
+}
+
