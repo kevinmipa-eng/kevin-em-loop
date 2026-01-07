@@ -18,7 +18,7 @@
 #cta .title {
     font-size: 4rem;
     color: #1d1d1d;
-    width: 225%;
+    width: 200%;
 
 }
 
@@ -53,11 +53,11 @@
 }
 
 #banner img {
-  height: 70%;
+  height: 74%;
   width: fit-content;
   z-index: 2;
   position: relative;
-  right: -200px;
+  right: 200px;
 }
 
 .shape {
