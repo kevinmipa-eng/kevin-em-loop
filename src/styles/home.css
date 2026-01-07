@@ -30,7 +30,7 @@
 
 #cta .description {
     font-size: 1.2rem;
-    width: 110%;
+    width: 120%;
 }
 
 #cta_buttons {
@@ -48,16 +48,16 @@
   display: flex;
   align-items: start;
   justify-content: end;
-  width: 70%;
+  width: 100%;
 
 }
 
 #banner img {
-  height: 70%;
+  height: 74%;
   width: fit-content;
   z-index: 2;
   position: relative;
-  right: -200px;
+  right: 180px;
 }
 
 .shape {

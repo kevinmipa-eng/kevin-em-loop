@@ -12,6 +12,10 @@ body {
     background-color: #64cec9;
 }
 
+body::-webkit-scrollbar {
+    display: flex;
+}
+
 section {
     padding: 28px 8%;
 }
@@ -57,4 +61,6 @@ section {
 .socia-midia-buttons a:hover {
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1)
 }
+
+
 
